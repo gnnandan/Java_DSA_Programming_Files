@@ -2,7 +2,7 @@ package String_DSA;
 
 import java.util.Arrays;
 
-public class _04_String_To_Array
+public class _04_String_To_Character
 {
     public static void main(String[] args)
     {
