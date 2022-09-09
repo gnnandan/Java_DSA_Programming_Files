@@ -12,19 +12,19 @@ public class _10_FIZZ_BUZZ
         {
             if (i % 3 == 0&& i%5!=0)
             {
-                System.out.println("FIZZ");
+                System.out.print("FIZZ"+" ");
             }
             else if(i%5==0&& i%3!=0)
             {
-                System.out.println("BUZZ");
+                System.out.print("BUZZ"+" ");
             }
             else if(i%3==0 && i%5==0)
             {
-                System.out.println(i + " FIZZ - BUZZ");
+                System.out.print(i + " FIZZ - BUZZ"+" ");
             }
             else
             {
-                System.out.println(i);
+                System.out.print(i+" ");
             }
 //            else if (i % 5 == 0 && i % 3 != 0)
 //            {
