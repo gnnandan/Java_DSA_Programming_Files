@@ -20,7 +20,6 @@ public class _14_First_Repeated_Word
                 if (word[i].equals(word[j]))
                 {
                     count++;
-
                     word[j] = "0";
                 }
             }
