@@ -4,12 +4,12 @@ public class _13_Digit_Check_In_String
 {
     public static void main(String[] args)
     {
-        String s = "Nandan123@<>";
+        String s = "C123urious$^%^&Deve1234lopers";
         char c[] = s.toCharArray();
 
         StringBuilder digits = new StringBuilder();
         StringBuilder symbols = new StringBuilder();
-
+        StringBuilder validMessage = new StringBuilder();
 
         for(char ch: c)
         {
@@ -24,9 +24,14 @@ public class _13_Digit_Check_In_String
             {
                 symbols.append(ch);
             }
+
+            if(Character.isAlphabetic(ch))
+            {
+                validMessage.append(ch);
+            }
         }
         System.out.println("The digits in the string: "+digits);
         System.out.println("The special symbols in the string: "+symbols);
-
+        System.out.println("The Valid message in the string: "+validMessage);
     }
 }
