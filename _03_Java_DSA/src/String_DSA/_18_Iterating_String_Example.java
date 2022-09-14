@@ -1,6 +1,6 @@
 package String_DSA;
 
-public class _18_Iterating_String
+public class _18_Iterating_String_Example
 {
     public static void main(String[] args)
     {
