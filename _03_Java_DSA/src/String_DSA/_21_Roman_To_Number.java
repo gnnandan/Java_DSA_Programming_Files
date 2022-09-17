@@ -9,9 +9,9 @@ public class _21_Roman_To_Number
 {
     public static void main(String[] args)
     {
-        String s = "Mx".toUpperCase();
+        String s = "mxi".toUpperCase();
         //System.out.println("The roman equivalent of string s "+s+" is: "+romanToInt(s));
-        System.out.println("The roman equivalent of string s "+s+" is: "+leetCodeApproach(s));
+        System.out.println("The roman equivalent of string s " + s + " is: " + leetCodeApproach(s));
     }
 
     static int romanToInt(String s)
@@ -23,21 +23,19 @@ public class _21_Roman_To_Number
         {
             int s1 = romanEquivalent(s.charAt(i));
             //getting value from symbol s1[i+1];
-            if(i+1<s.length())
+            if (i + 1 < s.length())
             {
-                int s2 = romanEquivalent(s.charAt(i+1));
-                if(s1>=s2)
+                int s2 = romanEquivalent(s.charAt(i + 1));
+                if (s1 >= s2)
                 {
-                    total = total +s1;
-                }
-                else
+                    total = total + s1;
+                } else
                 {
-                    total = total -s1;
+                    total = total - s1;
                 }
-            }
-            else
+            } else
             {
-                total = total+s1;
+                total = total + s1;
             }
         }
         return total;
@@ -78,7 +76,7 @@ public class _21_Roman_To_Number
 
     static int leetCodeApproach(String s)
     {
-        Map<Character,Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new HashMap<>();
 
         // Fill the map
         map.put('I', 1);
@@ -89,25 +87,24 @@ public class _21_Roman_To_Number
         map.put('D', 500);
         map.put('M', 1000);
 
-        //store the length
-        int len = s.length();
+        //finding the length
+        int length = s.length();
 
-        //get the last length
-        int num = map.get(s.charAt(len-1)) ;
+        //to take the first element from right side
+        int num = map.get(s.charAt(length - 1));
 
-        //loop should last 2nd element in a string
-        for(int i=len-2;i>=0;i--)
+        //finding the next elements from right side
+        for (int i = length - 2; i >= 0; i--)
         {
-            if(map.get(s.charAt(i))>0)
+            if (map.get(s.charAt(i)) >= map.get(s.charAt(i + 1)))
             {
                 num = num + map.get(s.charAt(i));
-            }
-            else
+            } else
             {
                 num = num - map.get(s.charAt(i));
             }
         }
-//        System.out.println(num);
         return num;
     }
+
 }

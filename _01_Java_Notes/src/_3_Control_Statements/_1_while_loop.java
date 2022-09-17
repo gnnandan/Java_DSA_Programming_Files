@@ -14,6 +14,7 @@ public class _1_while_loop
         }
     }
 }
+
 //Output
 //1 Chocolate to person 1
 //2 Chocolate to person 1
