@@ -16,6 +16,7 @@ public class _2_for_loop
         }
     }
 }
+
 //output
 //1 Chocolate to person 1
 //2 Chocolate to person 2
