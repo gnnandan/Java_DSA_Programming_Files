@@ -19,3 +19,6 @@ public class _03_Duplicate_Character
 
     }
 }
+//output
+//a
+//n

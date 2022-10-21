@@ -15,3 +15,5 @@ public class _01_Reverse_String
         System.out.println(rev_s);
     }
 }
+//output
+//nadnaN

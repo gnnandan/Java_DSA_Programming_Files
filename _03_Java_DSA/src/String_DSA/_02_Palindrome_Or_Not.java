@@ -21,5 +21,8 @@ public class _02_Palindrome_Or_Not
         {
             System.out.println("Not Palindrome");
         }
+
     }
 }
+//output
+//Palindrome
